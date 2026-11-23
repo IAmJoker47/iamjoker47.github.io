@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rclone Google Drive access</title>
+  <meta name="description" content="A personal rclone setup that accesses the owner's own Google Drive.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1d2327;
+      --muted: #5a646b;
+      --link: #0b57d0;
+      --rule: #dfe3e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14181b;
+        --text: #e6e9eb;
+        --muted: #9aa5ac;
+        --link: #8ab4f8;
+        --rule: #2a3136;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1.25rem;
+    }
+    h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1rem; }
+    h2 { font-size: 1.1rem; margin: 2rem 0 0.5rem; }
+    p, li { max-width: 65ch; }
+    a { color: var(--link); }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>rclone Google Drive access</h1>
+    <p>
+      This is a personal app that lets the owner use
+      <a href="https://rclone.org/">rclone</a>, an open-source command-line tool,
+      to copy, sync and back up files in their own Google Drive.
+    </p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Connects to the owner's Google Drive after they sign in and approve access.</li>
+      <li>Lists, uploads and downloads files only when the owner runs an rclone command.</li>
+    </ul>
+
+    <h2>Who uses it</h2>
+    <p>
+      Only the owner. The app is not offered to the public, and no other users
+      sign in to it.
+    </p>
+
+    <h2>Your data</h2>
+    <p>
+      Files are transferred directly between the owner's computer and Google Drive.
+      Nothing is collected, stored or shared with anyone else. Read the
+      <a href="privacy.html">privacy policy</a> for details.
+    </p>
+
+    <footer>
+      <a href="privacy.html">Privacy policy</a>
+    </footer>
+  </main>
+</body>
+</html>
